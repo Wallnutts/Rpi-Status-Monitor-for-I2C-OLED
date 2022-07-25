@@ -1,0 +1,11 @@
+ [Unit]
+ Description=Startup Service
+ After=multi-user.target
+
+ [Service]
+ Type=idle
+ Restart=always
+ ExecStart=/usr/bin/python /home/pi/luma.examples/examples/test2.py
+
+ [Install]
+ WantedBy=multi-user.target
